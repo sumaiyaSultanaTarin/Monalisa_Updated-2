@@ -9,35 +9,44 @@ Version      : 1.0
 	
 	jQuery(document).ready(function(){
 	
+		window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar-default");
+  if (window.scrollY > 50) {
+    navbar.classList.add("menu-shrink");
+  } else {
+    navbar.classList.remove("menu-shrink");
+  }
+});
+
 		/*PRELOADER JS*/
-		$(window).load(function() { 
-			$('.status').fadeOut();
-			$('.preloader').delay(350).fadeOut('slow'); 
-		}); 
+		// $(window).load(function() { 
+		// 	$('.status').fadeOut();
+		// 	$('.preloader').delay(350).fadeOut('slow'); 
+		// }); 
 		/*END PRELOADER JS*/
 
 		/*START MENU JS*/
-				$('a.page-scroll').on('click', function(e){
-					var anchor = $(this);
-					$('html, body').stop().animate({
-						scrollTop: $(anchor.attr('href')).offset().top - 50
-					}, 1500);
-					e.preventDefault();
-				});		
+			// 	$('a.page-scroll').on('click', function(e){
+			// 		var anchor = $(this);
+			// 		$('html, body').stop().animate({
+			// 			scrollTop: $(anchor.attr('href')).offset().top - 50
+			// 		}, 1500);
+			// 		e.preventDefault();
+			// 	});		
 
-			$(window).scroll(function() {
-			  if ($(this).scrollTop() > 100) {
-				$('.menu-top').addClass('menu-shrink');
-			  } else {
-				$('.menu-top').removeClass('menu-shrink');
-			  }
-			});
+			// $(window).scroll(function() {
+			//   if ($(this).scrollTop() > 100) {
+			// 	$('.menu-top').addClass('menu-shrink');
+			//   } else {
+			// 	$('.menu-top').removeClass('menu-shrink');
+			//   }
+			// });
 			
-			$(document).on('click','.navbar-collapse.in',function(e) {
-			if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-				$(this).collapse('hide');
-			}
-			});				
+			// $(document).on('click','.navbar-collapse.in',function(e) {
+			// if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+			// 	$(this).collapse('hide');
+			// }
+			// });				
 		/*END MENU JS*/ 
 			
 		/*START MIXITUP JS*/	
@@ -45,14 +54,14 @@ Version      : 1.0
 		/*END MIXITUP JS*/
 												
 		/*START TESTIMONIAL JS*/
-			$(window).load(function () {
-				$('.testi-slider').flexslider({
-					animation: "slide",
-					direction: "fade",
-					prevText: "<i class='fa fa-long-arrow-left'></i>",
-					nextText: "<i class='fa fa-long-arrow-right'></i>"
-				});
-			});
+			// $(window).load(function () {
+			// 	$('.testi-slider').flexslider({
+			// 		animation: "slide",
+			// 		direction: "fade",
+			// 		prevText: "<i class='fa fa-long-arrow-left'></i>",
+			// 		nextText: "<i class='fa fa-long-arrow-right'></i>"
+			// 	});
+			// });
 		/*END TESTIMONIAL JS*/
 		
 		/*START VIDEO JS*/

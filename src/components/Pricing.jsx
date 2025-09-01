@@ -29,7 +29,7 @@ export default function Pricing() {
 								 <li>24/7 Support</li>
 							</ul>
 							<div className="pricing-btn">
-								<button className="btn-light-bg">Get Plan</button>
+								<button className="pricing-btn">Get Plan</button>
 							</div>
 						</div>{/* END PRICING TABLE */}
 					</div>{/* END COL */}
@@ -50,7 +50,7 @@ export default function Pricing() {
 								 <li>24/7 Support</li>
 							</ul>
 							<div className="pricing-btn">
-								<button className="btn-light-bg">Get Plan</button>
+								<button className="pricing-btn">Get Plan</button>
 							</div>
 						</div>{/* END PRICING TABLE */}
 					</div>{/* END COL */}
@@ -70,7 +70,7 @@ export default function Pricing() {
 								 <li>24/7 Support</li>
 							</ul>
 							<div className="pricing-btn">
-								<button className="btn-light-bg">Get Plan</button>
+								<button className="pricing-btn">Get Plan</button>
 							</div>
 						</div>{/* END PRICING TABLE */}
 					</div>{/* END COL  */}  

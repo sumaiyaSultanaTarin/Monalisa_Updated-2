@@ -1,3 +1,4 @@
+// src/components/Counter.jsx
 import React, { useEffect, useRef, useState } from "react";
 
 const targetValues = {
@@ -23,11 +24,10 @@ export default function Counter() {
       (entries) => {
         const entry = entries[0];
         if (entry.isIntersecting && !hasAnimated) {
-          // Start animation
+          // Start animation once
           Object.entries(targetValues).forEach(([key, value]) => {
             let start = 0;
             const increment = Math.ceil(value / 100);
-
             const interval = setInterval(() => {
               start += increment;
               if (start >= value) {
@@ -41,20 +41,23 @@ export default function Counter() {
             }, 20);
           });
 
-          setHasAnimated(true); // ensure only once
+          setHasAnimated(true);
         }
       },
-      { threshold: 0.3 } // 30% visible hole trigger hobe
+      { threshold: 0.3 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    // ✅ ref-এর snapshot নিলাম
+    const currentSection = sectionRef.current;
+    if (currentSection) {
+      observer.observe(currentSection);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSection) {
+        observer.unobserve(currentSection);
       }
+      observer.disconnect();
     };
   }, [hasAnimated]);
 

@@ -19,7 +19,7 @@ export default function Footer() {
 								<li><Link className="footer_skype wow bounceInDown" data-wow-delay=".6s" to="#" data-toggle="tooltip" data-placement="top" title="Skype"><i className="fa fa-skype"></i></Link></li>
 							</ul>
 						</div>	
-						<p className="footer_copyright">Monalisa &copy; 2016 All Rights Reserved.</p>							
+						<p className="footer_copyright">Monalisa &copy; 2025 All Rights Reserved.</p>							
 					</div>{/*- END COL */}
 				</div>{/*- END ROW */}
 			</div>{/*- END CONTAINER */}
