@@ -11,7 +11,7 @@ export default function Navbar() {
         target.tagName === "A" &&
         !target.classList.contains("dropdown-toggle")
       ) {
-        collapse?.classList.remove("in", "show"); // Bootstrap 3 vs 4/5
+        collapse?.classList.remove("in", "show"); 
         collapse?.classList.add("collapse");
       }
     };
