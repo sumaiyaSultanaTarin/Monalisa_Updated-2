@@ -21,7 +21,7 @@ import ContactForm from '../components/home/ContactForm';
 import Footer from '../components/home/Footer';
 
 
-export default function HomeDefault() {
+export default function HomeParallax() {
 useEffect(() => {
 validation();
 }, []);

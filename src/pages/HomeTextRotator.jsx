@@ -21,7 +21,7 @@ import Footer from '../components/home/Footer';
 import TextRotator from "../components/homeTextRotator/TextRotator";
 
 
-export default function HomeDefault() {
+export default function HomeTextRotator() {
 useEffect(() => {
 validation();
 }, []);

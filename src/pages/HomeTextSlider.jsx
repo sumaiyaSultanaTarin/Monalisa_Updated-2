@@ -20,7 +20,7 @@ import Footer from '../components/home/Footer';
 import TextSlider from "../components/homeTextSlider/TextSlider";
 
 
-export default function HomeDefault() {
+export default function HomeTextSlider() {
 useEffect(() => {
 validation();
 }, []);

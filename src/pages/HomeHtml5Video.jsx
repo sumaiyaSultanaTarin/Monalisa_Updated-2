@@ -20,7 +20,7 @@ import PartnerLogo from '../components/home/PartnerLogo';
 import ContactForm from '../components/home/ContactForm';
 import Footer from '../components/home/Footer';
 
-export default function HomeDefault() {
+export default function HomeHtml5Video() {
   useEffect(() => {
     validation();
   }, []);

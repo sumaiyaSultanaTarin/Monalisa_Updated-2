@@ -2,7 +2,7 @@ import  { useEffect } from 'react'
 import validation from "../../utils/scripts";
 import Preloader from "../../components/home/Preloader";
 import Navbar from "../../components/home/Navbar";
-import HomeSlider from "../../components/home/HomeSlider"
+import Home from '../../components/homeParallax/Home';
 import AboutUs from '../../components/home/AboutUs';
 import WhyChooseUs from '../../components/home/WhyChooseUs';
 import Counter from '../../components/home/Counter';
@@ -18,7 +18,7 @@ import PartnerLogo from '../../components/home/PartnerLogo';
 import ContactForm from '../../components/home/ContactForm';
 import Footer from '../../components/home/Footer';
 
-export default function HomeDefaultL() {
+export default function HomeParallaxL() {
       useEffect(() => {
         validation();
       }, []);
@@ -27,7 +27,7 @@ export default function HomeDefaultL() {
     <div data-spy="scroll" data-offset="80">
         <Preloader/>
         <Navbar/>
-        <HomeSlider/>
+        <Home/>
         <AboutUs/>
         <WhyChooseUs/>
         <Counter/>
