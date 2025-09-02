@@ -6,6 +6,8 @@ import HomeHtml5Video from "./pages/HomeHtml5Video";
 import HomeTextRotator from "./pages/HomeTextRotator";
 import HomeYoutube from "./pages/HomeYoutube";
 
+import HomeDefaultL from "./pages/light/HomeDefaultL";
+
 function App() {
   return (
     
@@ -19,7 +21,7 @@ function App() {
          <Route path="/HomeHtml5Video" element={<HomeHtml5Video />} />
         <Route path="/HomeYoutube " element={<HomeYoutube />} />
 
-        {/* <Route path="/HomeTwo" element={<HomeTwo />} /> */}
+        <Route path="/HomeTwo" element={<HomeDefaultL />} />
 
       </Routes>
     </BrowserRouter>
