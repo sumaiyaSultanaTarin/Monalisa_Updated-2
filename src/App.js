@@ -12,6 +12,7 @@ import HomeTextRotatorL from "./pages/light/HomeTextRotatorL";
 import HomeTextSliderL from "./pages/light/HomeTextSliderL";
 import HomeHtml5VideoL from "./pages/light/HomeHtml5VideoL";
 import HomeYoutubeL from "./pages/light/HomeYoutubeL";
+import Monalisa from "./pages/Monalisa";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomeDefault />} />
+        <Route path="/" element={<Monalisa/>}/>
+        <Route path="/HomeDefault" element={<HomeDefault />} />
         <Route path="/HomeParallax" element={<HomeParallax />} /> 
         <Route path="/HomeTextSlider" element={<HomeTextSlider />} />
          <Route path="/HomeTextRotator" element={<HomeTextRotator />} /> 
