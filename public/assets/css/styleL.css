@@ -296,6 +296,19 @@ fieldset {
         margin-top: 10px;
         padding: 8px;
     }
+        .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.45); 
+    padding: 15px;
+  }
+
+  .navbar-nav li a {
+    color: #100f0f !important; /* text white */
+    font-size: 500px;
+  }
+
+  .navbar-nav li.active a {
+    color: #8bc34a !important; /* active green */
+  }
 .menu-top li a {font-size: 11px;}	
 }
 @media only screen and (max-width:480px) { 
@@ -320,6 +333,33 @@ fieldset {
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus { background-color: #fff }
 .navbar-default .navbar-toggle .icon-bar { background-color: #8bc34a }
+/* underline effect */
+.navbar-nav li a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav li a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background: #8bc34a;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav li a:hover::after,
+.navbar-nav li.active a::after {
+  width: 40%;
+}
+
+/* active link color */
+.navbar-nav li.active a {
+  color: #8bc34a !important;
+}
 
 /*
 * ----------------------------------------------------------------------------------------
