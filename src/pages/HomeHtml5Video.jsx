@@ -2,7 +2,6 @@ import  { useEffect } from 'react'
 import validation from '../utils/scripts';
 
 //Components
-import Preloader from '../components/home/Preloader';
 import Navbar from '../components/home/Navbar';
 import HtmlVideo from '../components/homeHtml5Video/HtmlVideo';
 import AboutUs from '../components/home/AboutUs';
@@ -28,7 +27,6 @@ export default function HomeHtml5Video() {
   return (
     <div data-spy="scroll" data-offset="80">
 
-        <Preloader/>
         <Navbar/>
         
         {/* Home */}

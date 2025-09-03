@@ -1,8 +1,7 @@
 import  { useEffect } from 'react'
 import validation from '../utils/scripts';
 
-//Components
-import Preloader from '../components/home/Preloader';
+
 import Navbar from '../components/home/Navbar';
 import Slider from '../components/home/HomeSlider';
 import AboutUs from '../components/home/AboutUs';
@@ -28,7 +27,6 @@ export default function HomeDefault() {
   return (
     <div data-spy="scroll" data-offset="80">
 
-		<Preloader/>
 		<Navbar/>
 
 		{/* Home */}

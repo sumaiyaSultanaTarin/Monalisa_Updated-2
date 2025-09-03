@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import ReactPlayer from "react-player";
+
 
 export default function Youtube() {
   return (
@@ -8,8 +10,22 @@ export default function Youtube() {
     backgroundSize: "cover",
     backgroundPosition: "center center"
   }}>
-			{/* <Link className="player" data-property="{videoURL:'https://youtu.be/f7MskKkn2Jg',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>  */}
-			<div className="container">
+ {/* Background Video */}
+      <ReactPlayer
+        url="https://youtu.be/f7MskKkn2Jg"
+        playing
+        loop
+        muted
+        width="100%"
+        height="100%"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          objectFit: "cover",
+          zIndex: 0,
+        }}
+      />			<div className="container">
 				<div className="row">
 					<div className="col-md-12 text-center">
 						<div className="home_text">

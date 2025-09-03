@@ -1,6 +1,7 @@
 import  { useEffect } from 'react'
 import validation from "../../utils/scripts";
-import Preloader from "../../components/home/Preloader";
+
+//Components
 import Navbar from "../../components/home/Navbar";
 import Home from '../../components/homeParallax/Home';
 import AboutUs from '../../components/home/AboutUs';
@@ -25,7 +26,6 @@ export default function HomeParallaxL() {
     
   return (
     <div data-spy="scroll" data-offset="80">
-        <Preloader/>
         <Navbar/>
         <Home/>
         <AboutUs/>

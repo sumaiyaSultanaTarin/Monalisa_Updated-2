@@ -78,7 +78,7 @@ fieldset {
 /*START PRELOADER DESIGN*/
 
 .preloader {
-  background: #000000; 
+  background: #000000 !important; 
   position: fixed;
   top: 0;
   left: 0;
@@ -880,6 +880,7 @@ border-color: #8bc34a;
     transition: transform 0.4s ease, box-shadow 0.4s ease; 
     position: relative;
     overflow: hidden;
+   
 }
 
 .single_feature::before {
@@ -893,7 +894,7 @@ border-color: #8bc34a;
     transform: rotate(45deg);
     opacity: 0;
     transition: opacity 0.4s ease; 
-    z-index: 0;
+    
 }
 
 .single_feature:hover::before {
@@ -933,6 +934,17 @@ border-color: #8bc34a;
     margin: 20px auto;
     max-width: 90%;
   }
+    .single_feature {
+    width: 100% !important;
+    box-sizing: border-box;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .feature-container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+  
 }
 
 @media only screen and (max-width:768px) {

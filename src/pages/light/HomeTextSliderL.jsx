@@ -1,6 +1,7 @@
 import  { useEffect } from 'react'
 import validation from "../../utils/scripts";
-import Preloader from "../../components/home/Preloader";
+
+//Components
 import Navbar from "../../components/home/Navbar";
 import TextSlider from "../../components/homeTextSlider/TextSlider";
 import AboutUs from '../../components/home/AboutUs';
@@ -25,7 +26,6 @@ export default function HomeTextSliderL() {
  
  return(
  <div data-spy="scroll" data-offset="80">
-     <Preloader />
      <Navbar />
      <TextSlider />
      <AboutUs />

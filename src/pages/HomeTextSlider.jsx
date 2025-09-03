@@ -1,8 +1,8 @@
 import validation from '../utils/scripts';
 import { useEffect } from "react";
 
+//Components
 import Navbar from "../components/home/Navbar";
-import Preloader from "../components/home/Preloader";
 import AboutUs from '../components/home/AboutUs';
 import WhyChooseUs from '../components/home/WhyChooseUs';
 import Counter from '../components/home/Counter';
@@ -27,7 +27,6 @@ validation();
 
 return(
 <div data-spy="scroll" data-offset="80">
-    <Preloader />
     <Navbar />
     <TextSlider />
     <AboutUs />

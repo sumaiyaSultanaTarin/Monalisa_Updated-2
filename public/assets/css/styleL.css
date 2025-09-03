@@ -37,7 +37,7 @@ body {
     letter-spacing: 1px;
     height: 100%;
     font-family: 'Lato', sans-serif;
-    background: #fff ;
+    background: #fff !important;
     color: #777;
 }
 html,

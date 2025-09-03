@@ -123,6 +123,7 @@
   left:0;
   -moz-box-sizing:padding-box;
   -webkit-box-sizing:border-box;
+  box-sizing: border-box;
   text-align:left;
   z-index: 1000;
   font: 14px/16px sans-serif;
@@ -226,12 +227,14 @@
   left:0;
   -moz-box-shadow:#666666 1px 1px 3px;
   -webkit-box-shadow:#666666 1px 1px 3px;
+  box-shadow: #666666 1px 1px 3px;
 }
 
 .YTPOverlay{
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  -webkit-transform-style: "flat"
+  -webkit-transform-style: flat;
+  transform-style: flat;
 }
 
 /*RASTER OVERLAY*/

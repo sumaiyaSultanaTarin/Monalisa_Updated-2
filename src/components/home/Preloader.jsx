@@ -29,27 +29,31 @@
 import React, { useState, useEffect } from "react";
 
 export default function Preloader() {
-  const [loaded, setLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // Simulate loading for 1 second
-    const timer = setTimeout(() => setLoaded(true), 1000);
-    return () => clearTimeout(timer); // Cleanup timer
+    const handlePageLoad = () => {
+      setTimeout(() => setIsLoaded(true), 1000);
+    };
+
+    if (document.readyState === "complete") {
+      handlePageLoad();
+    } else {
+      window.addEventListener("load", handlePageLoad);
+      return () => window.removeEventListener("load", handlePageLoad);
+    }
   }, []);
 
   return (
-    <div className={`preloader ${loaded ? "hide" : ""}`}>
-      {/* Loader animation and Monalisa name in the center */}
+    <div className={`preloader ${isLoaded ? "hide" : ""}`}>
       <div className="loader">
         <div className="outer"></div>
         <div className="middle"></div>
         <div className="inner"></div>
-        <div className ="status-mes">
+        <div className="status-mes">
           <h4>Monalisa</h4>
         </div>
       </div>
     </div>
   );
 }
-
-

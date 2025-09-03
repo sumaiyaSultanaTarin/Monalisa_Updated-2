@@ -47,7 +47,7 @@ export default function Counter() {
       { threshold: 0.3 }
     );
 
-    // ✅ ref-এর snapshot নিলাম
+  
     const currentSection = sectionRef.current;
     if (currentSection) {
       observer.observe(currentSection);

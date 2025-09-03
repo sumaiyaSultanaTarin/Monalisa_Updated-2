@@ -17,12 +17,15 @@ import Monalisa from "./pages/Monalisa";
 import DarkLayout from "./layouts/DarkLayout";
 import LightLayout from "./layouts/LightLayout";
 
+import RouteWrapper from './utils/RouteWrapper';
+
 
 
 function App() {
 
   return (
     <BrowserRouter>
+    <RouteWrapper>
        <Routes>
         {/* Landing */}
         <Route path="/" element={<Monalisa/>}/>
@@ -43,6 +46,7 @@ function App() {
         <Route path="/HomeHtml5VideoL" element={<LightLayout><HomeHtml5VideoL/></LightLayout>}/>
         <Route path="/HomeYoutubeL" element={<LightLayout><HomeYoutubeL/></LightLayout>}/>
       </Routes>
+      </RouteWrapper>
     </BrowserRouter>
 
   );
