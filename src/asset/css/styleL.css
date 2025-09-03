@@ -29,7 +29,7 @@ Version      : 1.0
 * 01.GENERAL STYLE
 * ----------------------------------------------------------------------------------------
 */
-body {
+body{
     overflow-x: hidden;
     font-size: 16px;
     font-weight: 400;

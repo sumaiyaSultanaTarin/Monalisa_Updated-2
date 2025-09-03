@@ -29,7 +29,7 @@ Version      : 1.0
 * 01.GENERAL STYLE
 * ----------------------------------------------------------------------------------------
 */
-body {
+body{
     overflow-x: hidden;
     font-size: 16px;
     font-weight: 400;
@@ -37,8 +37,8 @@ body {
     letter-spacing: 1px;
     height: 100%;
     font-family: 'Lato', sans-serif;
-    background: #fff ;
-    color: #777;
+    background: #000;
+    color: #ccc;
 }
 html,
 body { height: 100% }
@@ -78,7 +78,7 @@ fieldset {
 /*START PRELOADER DESIGN*/
 
 .preloader {
-  background: #ffffff; 
+  background: #000000; 
   position: fixed;
   top: 0;
   left: 0;
@@ -195,48 +195,77 @@ fieldset {
 
 /*START SECTION TITLE DESIGN*/
 
-.section-title { margin-bottom: 60px }
-.section-title  h2 {
-    color: #333;
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    color: #fff;
     margin: 0;
     position: relative;
     text-transform: uppercase;
     padding-bottom: 10px;
+    font-size: 36px; 
+    line-height: 1.3;
+    text-align: center; 
 }
-@media only screen and (max-width:768px) { 
-    .section-title h2 { text-align: center }
+
+.section-title h2 span {
+    color: #8bc34a;
 }
-@media only screen and (max-width:480px) { 
-    .section-title h2 { font-size: 30px }
-}
-@media only screen and (max-width:360px) { 
-    .section-title h2 { font-size: 24px }
-}
-.section-title  h2 span{color:#8bc34a;}
+
 .line {
-    background: #8bc34a none repeat scroll 0 0;
+    background: #8bc34a;
     display: block;
     height: 2px;
     margin: 15px auto;
     width: 70px;
     position: relative;
 }
-.section-title-white {
-    color: #fff !important;
-    position: relative;
-}
+
 .section-title p {
-  color: #767575 !important;
     margin: auto;
     width: 65%;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
 }
-@media only screen and (max-width:768px) { 
+
+/* ✅ Responsive tweaks */
+@media only screen and (max-width:1024px) {
     .section-title p {
-      color:#5a5454 !important ;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .section-title {
+        margin-bottom: 40px;
+    }
+    .section-title h2 {
+        font-size: 28px;
+    }
+    .section-title p {
         padding: 0 20px;
         width: 100%;
     }
 }
+
+@media only screen and (max-width:480px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+    .section-title p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .section-title h2 {
+        font-size: 20px;
+    }
+}
+/* END SECTION TITLE DESIGN */
 
 /*END SECTION TITLE DESIGN*/
 /*
@@ -669,8 +698,8 @@ height:700px;
 .about-us {
   position: relative;
   padding: 60px 0;
-  background: #ffffff;
-  color: #333;
+  background: #0f161e;
+  color: #fff;
   scroll-margin-top: 90px;
 }
 
@@ -690,7 +719,6 @@ height:700px;
   width: 100%;
   position: relative;
   overflow: hidden;
-  border: 1px solid #8bc34a;
   border-radius: 20px; 
 }
 
@@ -707,25 +735,25 @@ height:700px;
 
 /* Card style for content */
 .about_content {
-  background: #ffffff !important;
-  border: 1px solid #8bc34a !important; 
+    background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid transparent; 
   border-radius: 20px;
   padding: 40px 30px;
   transition: all 0.4s ease;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .about_content:hover {
-background: #ffffff !important;
+background: rgba(255, 255, 255, 0.05) !important;
 border-color: #8bc34a;  
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 /* Icon */
 .icon_wrap {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #deb1b1;
+  background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -734,14 +762,14 @@ border-color: #8bc34a;
   transition: all 0.3s ease;
 }
 .about_content:hover .icon_wrap {
-  background: #8bc34a;
-  color: #feffff;
+  background: #fff;
+  color: #4caf50;
   transform: rotate(10deg) scale(1.1);
 }
 
 /* Title */
 .about_content h2 {
-  color: #000000;
+  color: #fff;
   margin: 0;
   text-transform: uppercase;
   font-size: 24px;
@@ -760,14 +788,14 @@ border-color: #8bc34a;
 
 /* Paragraph */
 .about_content p {
-  color: #444 !important;
+  color: #ccc;
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: justify;
 }
 
 .about_content:hover p {
-  color: #060606;
+  color: #f0f0f0;
 }
 /* Features */
 .about_features {
@@ -781,7 +809,7 @@ border-color: #8bc34a;
   align-items: center;
   gap: 8px;
   font-weight: 600;
-  color: #e36c6c;
+  color: #fff;
 }
 
 /* Responsive */
@@ -845,7 +873,7 @@ border-color: #8bc34a;
 .single_feature { 
     margin-top: 50px;
     padding: 30px 25px;
-    background: #fff; 
+    background: rgba(255, 255, 255, 0.1); 
     border-radius: 25px; 
     text-align: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
@@ -861,7 +889,7 @@ border-color: #8bc34a;
     left: -50%;
     width: 200%;
     height: 200%;
-    background: #fff;
+    background: linear-gradient(135deg, #00bcd4, #2196f3);
     transform: rotate(45deg);
     opacity: 0;
     transition: opacity 0.4s ease; 
@@ -869,7 +897,7 @@ border-color: #8bc34a;
 }
 
 .single_feature:hover::before {
-    opacity: 0.5; 
+    opacity: 0.2; 
 }
 
 @media only screen and (max-width:768px) { 
@@ -937,7 +965,7 @@ border-color: #8bc34a;
 }
 
 .single_feature h3 {
-    color: #0c0c0c;
+    color: #fff;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -960,7 +988,7 @@ border-color: #8bc34a;
     text-align: justify;
     font-size: 15px;
     line-height: 1.7;
-    color: #9a9999 !important;
+    color: #ddd;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.6s ease-in-out forwards 0.4s;
@@ -1516,11 +1544,11 @@ figure.effect-apollo:hover p {
 */
 
 .single_offer {
-    border: 1px solid #8bc34a;
+    border: 1px solid #333;
     padding: 20px;
     border-radius: 12px; 
     transition: all 0.3s ease; 
-    background-color: #fff9f9; 
+    background-color: #222; 
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
     margin-bottom: 20px;
 }
@@ -1576,7 +1604,7 @@ figure.effect-apollo:hover p {
 
 /* Styling for heading with animation */
 .single_offer h4 {
-    color: #090909;
+    color: #fff;
     font-weight: 400;
     margin-bottom: 0;
     margin-top: 20px;
@@ -1598,7 +1626,7 @@ figure.effect-apollo:hover p {
 .single_offer h5 {
     color: #8bc34a;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     margin-top: 10px;
 }
 
@@ -1613,9 +1641,9 @@ figure.effect-apollo:hover p {
 /* Modern button styling */
 .btn-feature-bg {
     background: transparent;
-    border: 1px solid #343232;
+    border: 2px solid #eee;
     border-radius: 30px;
-    color: #1a1616;
+    color: #fff;
     padding: 12px 30px;
     text-transform: uppercase;
     font-weight: 600;
@@ -1631,7 +1659,7 @@ figure.effect-apollo:hover p {
 .btn-feature-bg:focus {
     border: 2px solid #8bc34a;
     background-color: #8bc34a; 
-    color: #fcfcfc; 
+    color: #161616; 
     transform: translateY(-3px); 
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -1668,7 +1696,7 @@ figure.effect-apollo:hover p {
     font-size: 18px;
     margin-top: 15px;
     text-transform: uppercase;
-    color: #100505;
+    color: #fff;
     letter-spacing: 2px; 
     transition: color 0.3s ease, transform 0.3s ease; 
 }
@@ -1679,7 +1707,7 @@ figure.effect-apollo:hover p {
     margin-bottom: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 600; 
+    font-weight: 500; 
     transition: color 0.3s ease, transform 0.3s ease; 
 }
 
@@ -1972,14 +2000,14 @@ figure.effect-apollo:hover p {
 /* Pricing Table Container */
 .pricing-table {
   border-radius: 16px;
-  background-color: #f6f7f7;
+  background-color: #1f2428;
   overflow: hidden;
   padding: 32px 24px;           
   text-align: center;
   position: relative;
   margin: 15px 0;                
   transition: all 0.4s ease;
-  color: #333;
+  color: #fff;
   width: 100%;                   
   max-width: 360px;             
   min-width: 0;                  
@@ -1995,7 +2023,7 @@ figure.effect-apollo:hover p {
 /* Highlight Popular Plan */
 .pricing-table.active {
   transform: scale(1.03);
-  border: 2px solid #8bc34a;
+  border: 2px solid #fff;
   box-shadow: 0 0 35px rgba(255,255,255,0.4);
   z-index: 2;
 }
@@ -2008,14 +2036,14 @@ figure.effect-apollo:hover p {
   margin-bottom: 20px;
   position: relative;
   letter-spacing: 2px;
-  color: #333;
+  color: #fff;
 }
 .pricing-table h3::after {
   content: "";
   display: block;
   width: 50px;
   height: 3px;
-  background: #8bc34a;
+  background: rgba(255,255,255,0.7);
   margin: 8px auto 0;
   border-radius: 2px;
   transition: width 0.4s ease;
@@ -2047,7 +2075,7 @@ figure.effect-apollo:hover p {
 .pricing-list li {
   padding: 12px;
   font-size: 15px;
-  border-bottom: 1px dashed rgba(28, 22, 22, 0.15);
+  border-bottom: 1px dashed rgba(255,255,255,0.25);
 }
 .pricing-list li:last-child { border-bottom: none; }
 
@@ -2060,7 +2088,7 @@ figure.effect-apollo:hover p {
   background: #fff;
   color: #333;
   font-weight: 600;
-  border: 1px solid #767272;
+  border: none;
   padding: 12px 35px;
   border-radius: 50px;
   cursor: pointer;
@@ -2108,7 +2136,7 @@ figure.effect-apollo:hover p {
 * ----------------------------------------------------------------------------------------
 */
 .testimonials {
-  background: #fffdfd;
+  background: #000;
   position: relative;
   z-index: 1;
   padding: 60px 0;
@@ -2117,8 +2145,8 @@ figure.effect-apollo:hover p {
 
 /* Card look for the slider container */
 .testimonials .slick-slider {
-  background: #f8f5f5;
-  border: 1px solid #8bc34a;
+  background: #111;
+  border: 1px solid #111;
   border-radius: 10px;
   box-shadow: 0 7px 33px rgba(0,0,0,.12);
   margin: 0;
@@ -2147,7 +2175,7 @@ figure.effect-apollo:hover p {
   text-transform: uppercase;
 }
 .testimonials .testi-slider-item p {
-  color: #1d1b1b;
+  color: #fff;
   line-height: 30px;
 }
 
@@ -2260,9 +2288,9 @@ figure.effect-apollo:hover p {
 */
 /* ====== Design Tokens ====== */
 :root{
-  --card-bg:#ffffff;
-  --text:#7b7575;
-  --title:#1e1a1a;
+  --card-bg:#111;
+  --text:#ccc;
+  --title:#fff;
   --muted:#bbb;
   --accent:#8bc34a;
   --chip-bg:#fff;
@@ -2479,7 +2507,7 @@ figure.effect-apollo:hover p {
 * ----------------------------------------------------------------------------------------
 */
 .partner-logo { 
-    background: #faf8f8;
+    background: #ffffff;
     padding: 40px 0;  
 }
 
@@ -2550,7 +2578,7 @@ figure.effect-apollo:hover p {
 }
 
 .single-address h2 {
-    color: #333;
+    color: #fff;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -2566,25 +2594,24 @@ figure.effect-apollo:hover p {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
-    color: #9f9d9d;
+    color: #ccc;
 }
 
 
 /* ===== Form Controls ===== */
 .form-control {
-    background: #ebe9e9;
-    border: 1px solid #eee;
+    background: #111;
+    border: 1px solid #111;
     border-radius: 4px;
-    color: #333;
+    color: #fff;
     height: 50px;
     padding: 0 15px;
     transition: all 0.3s ease;
 }
 .form-control:focus {
     border: 1px solid #8bc34a;
-    background-color: #ebe9e9;
-    box-shadow: none;
-    outline: 0 none;
+    background: #1a1a1a;
+    outline: none;
 }
 
 /* Textarea */

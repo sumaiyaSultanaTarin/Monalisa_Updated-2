@@ -36,7 +36,9 @@ export default function validation() {
 		/*END MENU JS*/ 
 
     /* =========== GALLERY / LIGHTBOX =========== */
-    $("a[class^='prettyPhoto']").prettyPhoto();
+   if ($.fn.prettyPhoto) {
+  $("a[class^='prettyPhoto']").prettyPhoto();
+}
 
     /* =========== TESTIMONIAL (flexslider) =========== */
     $(window).on('load', function () {

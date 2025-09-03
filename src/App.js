@@ -13,6 +13,8 @@ import HomeTextSliderL from "./pages/light/HomeTextSliderL";
 import HomeHtml5VideoL from "./pages/light/HomeHtml5VideoL";
 import HomeYoutubeL from "./pages/light/HomeYoutubeL";
 import Monalisa from "./pages/Monalisa";
+import DarkLayout from "./layouts/DarkLayout";
+import LightLayout from "./layouts/LightLayout";
 
 function App() {
   return (
@@ -21,19 +23,19 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Monalisa/>}/>
-        <Route path="/HomeDefault" element={<HomeDefault />} />
-        <Route path="/HomeParallax" element={<HomeParallax />} /> 
-        <Route path="/HomeTextSlider" element={<HomeTextSlider />} />
-         <Route path="/HomeTextRotator" element={<HomeTextRotator />} /> 
-         <Route path="/HomeHtml5Video" element={<HomeHtml5Video />} />
-        <Route path="/HomeYoutube " element={<HomeYoutube />} />
+        <Route path="/HomeDefault" element={<DarkLayout><HomeDefault/></DarkLayout>}/>
+        <Route path="/HomeParallax" element={<DarkLayout><HomeParallax/></DarkLayout>}/> 
+        <Route path="/HomeTextSlider" element={<DarkLayout><HomeTextSlider/></DarkLayout>}/>
+        <Route path="/HomeTextRotator" element={<DarkLayout><HomeTextRotator/></DarkLayout>}/> 
+        <Route path="/HomeHtml5Video" element={<DarkLayout><HomeHtml5Video/></DarkLayout>}/>
+        <Route path="/HomeYoutube" element={<DarkLayout><HomeYoutube/></DarkLayout>}/>
 
-        <Route path="/HomeDefault" element={<HomeDefaultL />} />
-        <Route path="/HomeParallaxL" element={<HomeParallaxL />} />
-        <Route path="/HomeTextRotatorL" element={<HomeTextRotatorL />} />
-        <Route path="/HomeTextSliderL" element={<HomeTextSliderL />} />
-        <Route path="/HomeHtml5VideoL" element={<HomeHtml5VideoL />} />
-        <Route path="/HomeYoutubeL" element={<HomeYoutubeL />} />
+        <Route path="/HomeDefaultL" element={<LightLayout><HomeDefaultL/></LightLayout>}/>
+        <Route path="/HomeParallaxL" element={<LightLayout><HomeParallaxL/></LightLayout>}/>
+        <Route path="/HomeTextRotatorL" element={<LightLayout><HomeTextRotatorL/></LightLayout>}/>
+        <Route path="/HomeTextSliderL" element={<LightLayout><HomeTextSliderL/></LightLayout>}/>
+        <Route path="/HomeHtml5VideoL" element={<LightLayout><HomeHtml5VideoL/></LightLayout>}/>
+        <Route path="/HomeYoutubeL" element={<LightLayout><HomeYoutubeL/></LightLayout>}/>
 
 
       </Routes>
