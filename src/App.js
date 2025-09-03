@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import HomeTextSlider from "./pages/HomeTextSlider";
 import HomeParallax from "./pages/HomeParallax";
 import HomeDefault from "./pages/HomeDefault";
@@ -16,13 +17,17 @@ import Monalisa from "./pages/Monalisa";
 import DarkLayout from "./layouts/DarkLayout";
 import LightLayout from "./layouts/LightLayout";
 
+
+
 function App() {
+
   return (
-    
-    <>
     <BrowserRouter>
-      <Routes>
+       <Routes>
+        {/* Landing */}
         <Route path="/" element={<Monalisa/>}/>
+
+        {/* Dark Layout Pages */}
         <Route path="/HomeDefault" element={<DarkLayout><HomeDefault/></DarkLayout>}/>
         <Route path="/HomeParallax" element={<DarkLayout><HomeParallax/></DarkLayout>}/> 
         <Route path="/HomeTextSlider" element={<DarkLayout><HomeTextSlider/></DarkLayout>}/>
@@ -30,18 +35,16 @@ function App() {
         <Route path="/HomeHtml5Video" element={<DarkLayout><HomeHtml5Video/></DarkLayout>}/>
         <Route path="/HomeYoutube" element={<DarkLayout><HomeYoutube/></DarkLayout>}/>
 
+        {/* Light Layout Pages */}
         <Route path="/HomeDefaultL" element={<LightLayout><HomeDefaultL/></LightLayout>}/>
         <Route path="/HomeParallaxL" element={<LightLayout><HomeParallaxL/></LightLayout>}/>
         <Route path="/HomeTextRotatorL" element={<LightLayout><HomeTextRotatorL/></LightLayout>}/>
         <Route path="/HomeTextSliderL" element={<LightLayout><HomeTextSliderL/></LightLayout>}/>
         <Route path="/HomeHtml5VideoL" element={<LightLayout><HomeHtml5VideoL/></LightLayout>}/>
         <Route path="/HomeYoutubeL" element={<LightLayout><HomeYoutubeL/></LightLayout>}/>
-
-
       </Routes>
     </BrowserRouter>
 
-    </>
   );
 }
 

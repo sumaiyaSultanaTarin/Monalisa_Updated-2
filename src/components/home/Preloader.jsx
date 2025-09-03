@@ -33,7 +33,7 @@ export default function Preloader() {
 
   useEffect(() => {
     // Simulate loading for 1 second
-    const timer = setTimeout(() => setLoaded(true), 1000); // Reduced time to 1 second
+    const timer = setTimeout(() => setLoaded(true), 1000);
     return () => clearTimeout(timer); // Cleanup timer
   }, []);
 

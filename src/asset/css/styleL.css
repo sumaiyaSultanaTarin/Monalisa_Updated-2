@@ -164,6 +164,7 @@ fieldset {
   margin-top: 15px;
 }
 
+
 /*END PRELOADER DESIGN*/
 
 /*START SCROLL TO TOP*/
@@ -760,7 +761,7 @@ border-color: #8bc34a;
 
 /* Paragraph */
 .about_content p {
-  color: #444 !important;
+  color: #444 ;
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: justify;

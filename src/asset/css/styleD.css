@@ -37,7 +37,7 @@ body{
     letter-spacing: 1px;
     height: 100%;
     font-family: 'Lato', sans-serif;
-    background: #000;
+    background: #000 !important;
     color: #ccc;
 }
 html,
@@ -735,7 +735,7 @@ height:700px;
 
 /* Card style for content */
 .about_content {
-    background: rgba(255, 255, 255, 0.05) !important;
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid transparent; 
   border-radius: 20px;
   padding: 40px 30px;
@@ -743,7 +743,7 @@ height:700px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .about_content:hover {
-background: rgba(255, 255, 255, 0.05) !important;
+background: rgba(255, 255, 255, 0.05);
 border-color: #8bc34a;  
   transform: translateY(-8px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
@@ -788,7 +788,7 @@ border-color: #8bc34a;
 
 /* Paragraph */
 .about_content p {
-  color: #ccc;
+  color: #ccc !important;
   line-height: 1.6;
   margin-bottom: 20px;
   text-align: justify;
