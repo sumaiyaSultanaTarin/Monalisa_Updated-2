@@ -354,10 +354,12 @@ fieldset {
   } */
 
   .navbar-default .navbar-nav > li > a {
-    color: #ffffff !important; 
+    color: #0b0909 !important; 
   }
   .navbar-default .navbar-nav > li > a:hover {
-    background-color: #e7e7e7 !important; 
+    background-color: #ffffff !important; 
+    border-radius: 10px;
+   
   }
 }
 
@@ -371,12 +373,12 @@ fieldset {
 * 03.START HOME DESIGN
 * ----------------------------------------------------------------------------------------
 */
-/* ========= Tokens (optional) ========= */
+
 :root{
   --accent:#8bc34a;
-  --overlay: rgba(0,0,0,.65);
+  --overlay: rgba(0,0,0,.45);
   --text:#fff;
-  --muted:#f0f0f0;
+  --muted:#ffffff;
 }
 
 /* ========= Slider base ========= */
@@ -394,11 +396,11 @@ fieldset {
   background-position:center;
   background-size:cover;
   /* height was fixed 750px → make responsive */
-  min-height: clamp(520px, 85vh, 900px);
+  min-height: 100vh ;
 }
 @media (max-width:768px){
   .carousel-fade .carousel-inner .item{
-    min-height: clamp(420px, 70vh, 720px);
+    min-height: clamp(520px, 100vh, 900px);
   }
 }
 
@@ -428,7 +430,7 @@ fieldset {
   color:var(--text);
   text-align:center;
   width: min(92vw, 1100px);
-  margin:0;                 /* no negative margin hacks */
+  margin:0;       
   padding: 0 12px;
 }
 
@@ -445,7 +447,7 @@ fieldset {
 .caption p{
   margin: 0 auto;
   line-height: 1.7;
-  color: var(--muted);
+  color:#fff;
   width: min(90%, 760px);
   font-size: clamp(14px, 1.9vw, 18px);
 }

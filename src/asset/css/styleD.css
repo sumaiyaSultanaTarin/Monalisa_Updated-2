@@ -384,11 +384,11 @@ fieldset {
   background-position:center;
   background-size:cover;
   /* height was fixed 750px → make responsive */
-  min-height: clamp(520px, 85vh, 900px);
+  min-height: 100vh;
 }
 @media (max-width:768px){
   .carousel-fade .carousel-inner .item{
-    min-height: clamp(420px, 70vh, 720px);
+    min-height: clamp(520px, 100vh, 900px);
   }
 }
 
@@ -418,7 +418,7 @@ fieldset {
   color:var(--text);
   text-align:center;
   width: min(92vw, 1100px);
-  margin:0;                 /* no negative margin hacks */
+  margin:0;                 
   padding: 0 12px;
 }
 
@@ -435,7 +435,7 @@ fieldset {
 .caption p{
   margin: 0 auto;
   line-height: 1.7;
-  color: var(--muted);
+  color: #fff;
   width: min(90%, 760px);
   font-size: clamp(14px, 1.9vw, 18px);
 }
