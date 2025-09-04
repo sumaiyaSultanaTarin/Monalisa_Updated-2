@@ -1077,7 +1077,7 @@ border-color: #8bc34a;
     margin-bottom: 20px;
   }
 
-  .row.count > .col-xs-6:nth-last-child(-n + 2) .timer {
+  .row.count > .col-xs-6:last-child .timer {
     margin-bottom: 0;
   }
 }
