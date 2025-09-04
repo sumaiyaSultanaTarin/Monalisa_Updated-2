@@ -14,19 +14,19 @@ export default function Navbar() {
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </button>
-					<Link to="index.html" className="navbar-brand"><img src="assets/img/logo.png" alt="logo"/></Link>
+					<Link to="#home" className="navbar-brand"><img src="assets/img/logo.png" alt="logo"/></Link>
                 </div>
                 <div className="navbar-collapse collapse">
 					<nav>
 						<ul className="nav navbar-nav navbar-right">
-							<li><Link className="page-scroll" to="#home">Home</Link></li>
-							<li><Link className="page-scroll" to="#about">About</Link></li>							
-							<li><Link className="page-scroll" to="#gallery">Gallery</Link></li>
-							<li><Link className="page-scroll" to="#feature">Features</Link></li>
-							<li><Link className="page-scroll" to="#team">Team</Link></li>
-							<li><Link className="page-scroll" to="#pricing">Pricing</Link></li>						
-							<li><Link className="page-scroll" to="#blog">Blog</Link></li>			
-							<li><Link className="page-scroll" to="#contact">Contact</Link></li>
+							<li><Link className="page-scroll" smooth to="#home">Home</Link></li>
+							<li><Link className="page-scroll" smooth to="#about">About</Link></li>							
+							<li><Link className="page-scroll" smooth to="#gallery">Gallery</Link></li>
+							<li><Link className="page-scroll" smooth to="#feature">Features</Link></li>
+							<li><Link className="page-scroll" smooth to="#team">Team</Link></li>
+							<li><Link className="page-scroll" smooth to="#pricing">Pricing</Link></li>						
+							<li><Link className="page-scroll" smooth to="#blog">Blog</Link></li>			
+							<li><Link className="page-scroll" smooth to="#contact">Contact</Link></li>
 						</ul>
 					</nav>
                 </div> 

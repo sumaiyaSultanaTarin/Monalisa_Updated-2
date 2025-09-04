@@ -11,26 +11,26 @@ export default function Slider() {
 					<div className="caption">
 					  <h2 className="animated fadeInDownBig">Welcome our Monalisa</h2>
 					  <p className="animated fadeInLeftBig">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget dolor vel blandit.</p>
-					  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="#about"> 
+					  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" smooth to="#about"> 
 						<span>Learn More</span>
 					  </Link>
-					  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" to="#">Purchase now</Link>
+					  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" smooth to="#">Purchase now</Link>
 					</div>
 				  </div>
 				  <div className="item" style={{backgroundImage: "url(assets/img/bg/youtube-bg.jpg)"}}>
 					<div className="caption">
 					  <h2 className="animated fadeInDownBig">Exhaustive Resource of Spa Treatments</h2>
 					  <p className="animated fadeInLeftBig">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget dolor vel blandit.</p>
-					  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="#about"><span>Learn More</span></Link>
-					  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" to="#">Purchase now</Link>
+					  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" smooth to="#about"><span>Learn More</span></Link>
+					  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" smooth to="#">Purchase now</Link>
 					</div>
 				  </div>
 				  <div className="item" style={{backgroundImage: "url(assets/img/bg/slider03.jpg)"}}>
 					<div className="caption">
 					  <h2 className="animated fadeInDownBig">Give you unique experience</h2>
 					  <p className="animated fadeInLeftBig">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget dolor vel blandit.</p>
-					  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="#about"><span>Learn More</span></Link>
-					  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" to="#">Purchase now</Link>
+					  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" smooth to="#about"><span>Learn More</span></Link>
+					  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" smooth to="#pricing">Purchase now</Link>
 					</div>
 				  </div>
 				</div>

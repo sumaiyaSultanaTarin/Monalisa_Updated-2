@@ -12,13 +12,13 @@ export default function validation() {
    
    
  /*START MENU JS*/
-				$('a.page-scroll').on('click', function(e){
-					var anchor = $(this);
-					$('html, body').stop().animate({
-						scrollTop: $(anchor.attr('href')).offset().top - 50
-					}, 1500,'easeInOutQuart');
-					e.preventDefault();
-				});		
+				// $('a.page-scroll').on('click', function(e){
+				// 	var anchor = $(this);
+				// 	$('html, body').stop().animate({
+				// 		scrollTop: $(anchor.attr('href')).offset().top - 50
+				// 	}, 1500,'easeInOutQuart');
+				// 	e.preventDefault();
+				// });		
 
 			$(window).scroll(function() {
 			  if ($(this).scrollTop() > 100) {
