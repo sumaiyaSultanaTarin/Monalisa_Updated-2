@@ -42,6 +42,7 @@ return (
     <Blog />
     <PartnerLogo />
     <ContactForm />
+    <div id="map"></div>
     <Footer />
 
 
