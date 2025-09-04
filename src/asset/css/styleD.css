@@ -2166,7 +2166,7 @@ figure.effect-apollo:hover p {
   padding: 0 32px;                
 }
 
-.testimonials .slick-list { overflow: visible; }
+.testimonials .slick-list { overflow: hidden; }
 
 /* Slide item */
 .testimonials .testi-slider-item {
