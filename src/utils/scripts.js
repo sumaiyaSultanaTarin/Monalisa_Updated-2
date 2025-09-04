@@ -3,7 +3,7 @@ Author       : Syed Ekram.
 Template Name: Monalisa - Health & Beauti HTML Template
 Version      : 1.0
 */
-/* global jQuery, WOW ,google*/
+/* global jQuery, WOW */
 
 export default function validation() {
 (function($) {
@@ -86,23 +86,24 @@ export default function validation() {
 
   });
 
-  		/*START CONTACT MAP JS*/
-		function initialize() {
-		  var mapOptions = {
-			zoom: 15,
-			scrollwheel: false,
-			center: new google.maps.LatLng(40.7127837, -74.00594130000002)
-		  };
-		  var map = new google.maps.Map(document.getElementById('map'),
-			  mapOptions);
-		   new google.maps.Marker({
-			position: map.getCenter(),
-			icon: 'assets/img/map_pin.png',
-			map: map
-		  });
-		}
-		google.maps.event.addDomListener(window, 'load', initialize);	
-	   /*END CONTACT MAP JS*/
+  	// 	/*START CONTACT MAP JS*/
+	// 	function initialize() {
+	// 	  var mapOptions = {
+	// 		zoom: 7,
+	// 		scrollwheel: false,
+	// 		center: new google.maps.LatLng(23.6850, 90.3563)
+	// 	  };
+	// 	  var map = new google.maps.Map(document.getElementById('map'),
+	// 		  mapOptions);
+	// 	   new google.maps.Marker({
+	// 		position: map.getCenter(),
+	// 		icon: 'assets/img/map_pin.png',
+	// 		map: map,
+	// 		title: "Bangladesh"
+	// 	  });
+	// 	}
+	// 	google.maps.event.addDomListener(window, 'load', initialize);	
+	//    /*END CONTACT MAP JS*/
 
   /* =========== WOW ANIMATION =========== */
   new WOW().init();
