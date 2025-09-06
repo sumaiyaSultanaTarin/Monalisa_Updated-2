@@ -256,11 +256,12 @@ fieldset {
     width: 100%;
     padding: 20px 0;
     background: none;
-    transition: all 0.4s ease-in-out;
+    
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .navbar-default .navbar-scrolled {
@@ -580,7 +581,7 @@ fieldset {
 /*START TEXT SLIDER*/
 .text_slider {
 position: relative;
-height:700px;
+min-height : 100vh;
 }
 .text_slider:before {
     background: rgba(0, 0, 0, 0.6);
@@ -606,7 +607,7 @@ height:700px;
 .html-video:before {
     background: rgba(0, 0, 0, 0.6);
     content: "";
-    height: 100%;
+    min-height: 100vh;
     left: 0;
     opacity: 0.8;
     position: absolute;
@@ -616,17 +617,18 @@ height:700px;
 video{ min-width:100%; }
 
 .slider-caption{
-  position:absolute; left:50%; top:50%;
+  position:absolute; left:50%; top:30%;
   transform: translate(-50%,-50%);
   width: min(92vw, 1100px);
   text-align:center; z-index:15;
 }
 .slider-caption p{ width:min(90%,760px)!important; margin:0 auto }
 
+
 /*START YOUTUBE HOME DESIGN*/
 .youtube_bg {
 position: relative;
-height:700px;
+min-height:100vh;
 }
 .youtube_bg:before {
     background: rgba(0, 0, 0, 0.6);
@@ -641,7 +643,7 @@ height:700px;
 .home_text h2 {
     color: #f8f8f8;
     font-size: 40px;
-	 padding-top:250px;
+	  padding-top:250px;
     margin-top: 0;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -664,9 +666,10 @@ height:700px;
   height: 100%;
   background-size: cover;
   background-position: center;
-  z-index: 2;
+  z-index: 1;
   opacity: 1;
-  transition: opacity 1.5s ease-in-out;
+  visibility: visible;
+  transition: opacity 1.5s ease-in-out, visibility 1.5s ease-in-out;
 }
 
 .youtube_bg.loaded .bg-image {
@@ -685,6 +688,40 @@ height:700px;
   10% { opacity: 1; transform: translateY(0); }
   80% { opacity: 1; transform: translateY(0); }
   100% { opacity: 0; transform: translateY(-10px); }
+}
+
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    overflow: hidden;
+}
+
+.video-iframe {
+   transform: scale(1.1);
+   transform-origin: center center;
+}
+
+.video-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+}
+
+.container{
+  position: relative;
+  z-index: 3;
 }
 
 
@@ -904,7 +941,7 @@ border-color: #8bc34a;
     width: 200%;
     height: 200%;
     background: #fff;
-    transform: rotate(45deg);
+    transform: rotate(0deg);
     opacity: 0;
     transition: opacity 0.4s ease; 
     z-index: 0;
@@ -912,6 +949,7 @@ border-color: #8bc34a;
 
 .single_feature:hover::before {
     opacity: 0.5; 
+
 }
 
 @media only screen and (max-width:768px) { 
@@ -1017,6 +1055,24 @@ border-color: #8bc34a;
         opacity: 1;
         transform: translateY(0);
     }
+}
+.center-flex {
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px ) and (max-width: 991px) {
+  .center-flex {
+    flex-direction: column;
+  }
+  .col-md-6 {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
 }
 
 
@@ -1610,12 +1666,6 @@ figure.effect-apollo:hover p {
     }
 }
 
-/* Hover effect for image */
-.single_offer:hover .single_offer_img img {
-    transform: scale(1.1); 
-    opacity: 0.8;
-}
-
 /* Styling for heading with animation */
 .single_offer h4 {
     color: #090909;
@@ -1682,11 +1732,11 @@ figure.effect-apollo:hover p {
 .btn-feature-bg:active {
     transform: scale(0.98); 
 }
-  
+
 
 /*
 * ----------------------------------------------------------------------------------------
-* 09.END FEATURE DESIGN
+* 09.END DESIGN
 * ----------------------------------------------------------------------------------------
 */
 

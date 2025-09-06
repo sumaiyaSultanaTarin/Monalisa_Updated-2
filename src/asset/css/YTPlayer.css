@@ -108,10 +108,11 @@
 
 .mb_YTVPBar{
 
-  transition: opacity 1s;
   -moz-transition: opacity 1s;
   -webkit-transition: opacity 1s;
   -o-transition: opacity 1s;
+    transition: opacity 1s;
+
 
   display:block;
   width:100%;
@@ -138,10 +139,11 @@
 
 .mb_YTVPBar .buttonBar{
 
-  transition: all 1s;
   -moz-transition: all 1s;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
+  transition: all 1s;
+
 
   background:transparent;
   font:12px/14px Calibri;

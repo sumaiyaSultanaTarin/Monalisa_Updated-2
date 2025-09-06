@@ -16,7 +16,7 @@ export default function Feature() {
 							<div className="single_offer_img">
 								<img src="assets/img/service_1.jpg" className="img-responsive" alt="" />
 							</div>
-							<h4>Stone Message</h4>
+							<h4>Stone Massage</h4>
 							<h5>$100</h5>
 							<Link className="btn btn-default btn-feature-bg" to="#">Read More</Link>
 						</div>	
@@ -26,7 +26,7 @@ export default function Feature() {
 							<div className="single_offer_img">
 								<img src="assets/img/service_2.jpg" className="img-responsive" alt="" />
 							</div>
-							<h4>Body Message</h4>
+							<h4>Body Treatment</h4>
 							<h5>$100</h5>
 							<Link className="btn btn-default btn-feature-bg" to="#">Read More</Link>
 						</div>	

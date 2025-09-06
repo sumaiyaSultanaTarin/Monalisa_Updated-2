@@ -8,8 +8,9 @@ export default function WhyChooseUs() {
 						<h2>Why Choose <span>Monalisa</span></h2>
 						<div className="line"></div>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod tempor enim minim veniam quis notru exercit ation Lorem ipsum dolor sit amet.</p>
-					</div>					
-					<div className="col-md-6 col-sm-6 col-xs-12">
+					</div>	
+					<div className="center-flex">
+						<div className="col-md-6 col-sm-6 col-xs-12">
 						<div id="why_choose">
 							{/* Wrapper for slides */}
 							<div className="row ">	
@@ -47,12 +48,14 @@ export default function WhyChooseUs() {
 								</div>{/* END col-sm-6 */}
 							</div>{/* END CAROUSEL INNER */}
 						</div>{/* END CAROUSEL SLIDE */}				
-					</div>{/*- END COL */}
-					<div className="col-md-6 col-sm-6 col-xs-12"> 
-						<div className="feature_img">
-							<img src="assets/img/man.jpg" alt="" />
-						</div>
-					</div>{/*- END COL */}						
+						</div>{/*- END COL */}
+						<div className="col-md-6 col-sm-6 col-xs-12"> 
+							<div className="feature_img">
+								<img src="assets/img/man.jpg" alt="" />
+							</div>
+						</div>{/*- END COL */}		
+					</div>				
+			
 				</div>{/*- END ROW */}			
 			</div>{/*- END CONTAINER */}		
 		</section>

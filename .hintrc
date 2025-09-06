@@ -10,6 +10,18 @@
           "meta[name=theme-color]"
         ]
       }
-    ]
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "backdrop-filter",
+          "text-wrap",
+          "text-wrap: balance",
+          "-moz-box-sizing: padding-box"
+        ]
+      }
+    ],
+    "css-prefix-order": "off"
   }
 }

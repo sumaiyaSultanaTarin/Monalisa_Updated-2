@@ -567,8 +567,8 @@ fieldset {
 
 /*START TEXT SLIDER*/
 .text_slider {
-position: relative;
-height:700px;
+  position: relative;
+  min-height: 100vh;
 }
 .text_slider:before {
     background: rgba(0, 0, 0, 0.6);
@@ -614,7 +614,7 @@ video{ min-width:100%; }
 /*START YOUTUBE HOME DESIGN*/
 .youtube_bg {
 position: relative;
-height:700px;
+min-height:100vh;
 }
 .youtube_bg:before {
     background: rgba(0, 0, 0, 0.6);
@@ -892,7 +892,7 @@ border-color: #8bc34a;
     width: 200%;
     height: 200%;
     background: linear-gradient(135deg, #00bcd4, #2196f3);
-    transform: rotate(45deg);
+    transform: rotate(0deg);
     opacity: 0;
     transition: opacity 0.4s ease; 
     
@@ -1018,6 +1018,23 @@ border-color: #8bc34a;
     }
 }
 
+.center-flex {
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+@media screen and (min-width: 768px ) and (max-width: 991px) {
+  .center-flex {
+    flex-direction: column;
+  }
+  .col-md-6 {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+}
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -1607,12 +1624,6 @@ figure.effect-apollo:hover p {
         height: 200px;
         width: 200px;
     }
-}
-
-/* Hover effect for image */
-.single_offer:hover .single_offer_img img {
-    transform: scale(1.1); 
-    opacity: 0.8;
 }
 
 /* Styling for heading with animation */
