@@ -610,6 +610,22 @@ video{ min-width:100%; }
   text-align:center; z-index:15;
 }
 .slider-caption p{ width:min(90%,760px)!important; margin:0 auto }
+@media (max-width: 768px) {
+  .html-video {
+    min-height: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .html-video {
+    min-height: 350px;
+  }
+}
+@media (max-aspect-ratio: 9/16) {
+  .video-bg {
+    width: 100vh;
+    height: auto;
+  }
+}
 
 /*START YOUTUBE HOME DESIGN*/
 .youtube_bg {
@@ -643,7 +659,29 @@ min-height:100vh;
     .home_text p { width: 100% }
     .btn-light-bg {margin-right: 10px;}
 }
-
+@media (max-width: 991px) {
+  .youtube_bg {
+    height: 90vh;
+  }
+}
+@media (max-width: 768px) {
+  .youtube_bg {
+    height: 100vh;
+    min-height: 600px;
+  }
+}
+@media (max-width: 480px) {
+  .youtube_bg {
+    height: 100vh;
+    min-height: 500px;
+  }
+}
+@media (max-height: 500px) and (orientation: landscape) {
+  .youtube_bg {
+    height: 100vh;
+    min-height: 400px;
+  }
+}
 .bg-image {
   position: absolute;
   top: 0;
