@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
 export default function HtmlVideo() {
+		const goAbout = (e) => {
+  e.preventDefault();
+  document.getElementById("about")?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
   return (
     <>
       <section id="home" className="html-video">
@@ -15,7 +19,7 @@ export default function HtmlVideo() {
 			<div className="home_text slider-caption text-center">
 				  <h2 className="animated fadeInDownBig">Welcome our Monalisa</h2>
 				  <p className="animated fadeInLeftBig">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget dolor vel blandit.</p>
-				  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="#about">Learn More</Link>
+				  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="/HomeHtml5VideoL#about" onClick={goAbout}>Learn More</Link>
 				  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" to="#">Purchase now</Link>
 			</div>										
 		</section>

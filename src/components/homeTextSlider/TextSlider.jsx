@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
 export default function TextSlider() {
+		const goAbout = (e) => {
+  e.preventDefault();
+  document.getElementById("about")?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
   return (
     <>
     <section id="home" className="text_slider" style={{backgroundImage: "url(assets/img/bg/test_slider.jpg)", backgroundSize:"cover", backgroundPosition: "center center", backgroundAttachment:"fixed"}}>
@@ -15,7 +19,8 @@ export default function TextSlider() {
 									<div className="home_text">
 										  <h2 className="animated fadeInDownBig">Welcome our Monalisa</h2>
 										  <p className="animated fadeInLeftBig">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget dolor vel blandit.</p>
-										  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="#about">Learn More</Link>
+										  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="/HomeTextSliderL#about"
+                onClick={goAbout}>Learn More</Link>
 										  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" to="#">Purchase now</Link>
 									</div>
 								</div>
@@ -26,8 +31,9 @@ export default function TextSlider() {
 									<div className="home_text">
 										  <h2 className="animated fadeInDownBig">Exhaustive Resource of Spa Treatments</h2>
 										  <p className="animated fadeInLeftBig">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget dolor vel blandit.</p>
-										  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" href="#about">Learn More</Link>
-										  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" href="#">Purchase now</Link>
+										  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="/HomeTextSliderL#about"
+                onClick={goAbout}>Learn More</Link>
+										  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" to="#">Purchase now</Link>
 									</div>
 								</div>
 							   </div>
@@ -37,8 +43,9 @@ export default function TextSlider() {
 									<div className="home_text">
 										  <h2 className="animated fadeInDownBig">Give you unique experience</h2>
 										  <p className="animated fadeInLeftBig">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget dolor vel blandit.</p>
-										  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" href="#about">Learn More</Link>
-										  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" href="#">Purchase now</Link>
+										  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="/HomeTextSliderL#about"
+                onClick={goAbout}>Learn More</Link>
+										  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" to="#">Purchase now</Link>
 									</div>
 								</div>
 							   </div>

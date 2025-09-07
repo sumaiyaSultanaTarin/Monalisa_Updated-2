@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function TextRotator() {
+  	const goAbout = (e) => {
+  e.preventDefault();
+  document.getElementById("about")?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
   const texts = [
     "Welcome our Monalisa",
     "Exhaustive Resource of Spa Treatments",
@@ -43,7 +47,8 @@ export default function TextRotator() {
               <Link
                 data-scroll
                 className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll"
-                to="#about"
+                to="/HomeTextRotatorL#about"
+                onClick={goAbout}
               >
                 Learn More
               </Link>

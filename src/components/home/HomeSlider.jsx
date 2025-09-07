@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 
 
 export default function Slider() {
+	const goAbout = (e) => {
+  e.preventDefault();
+  document.getElementById("about")?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
   return (
     <>
 		<section id="home">
@@ -11,7 +15,7 @@ export default function Slider() {
 					<div className="caption">
 					  <h2 className="animated fadeInDownBig">Welcome our Monalisa</h2>
 					  <p className="animated fadeInLeftBig">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget dolor vel blandit.</p>
-					  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="#about"> 
+					  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="/homedefaultL#about" onClick={goAbout}> 
 						<span>Learn More</span>
 					  </Link>
 					  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" to="#">Purchase now</Link>
@@ -21,7 +25,7 @@ export default function Slider() {
 					<div className="caption">
 					  <h2 className="animated fadeInDownBig">Exhaustive Resource of Spa Treatments</h2>
 					  <p className="animated fadeInLeftBig">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget dolor vel blandit.</p>
-					  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="#about"><span>Learn More</span></Link>
+					  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="/homedefaultL#about" onClick={goAbout}><span>Learn More</span></Link>
 					  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" to="#">Purchase now</Link>
 					</div>
 				  </div>
@@ -29,7 +33,7 @@ export default function Slider() {
 					<div className="caption">
 					  <h2 className="animated fadeInDownBig">Give you unique experience</h2>
 					  <p className="animated fadeInLeftBig">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim. Aenean vitae metus in augue pretium ultrices. Duis dictum eget dolor vel blandit.</p>
-					  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="#about"><span>Learn More</span></Link>
+					  <Link data-scroll className="btn btn-default btn-light-bg animated fadeInUpBig page-scroll" to="/homedefaultL#about" onClick={goAbout}><span>Learn More</span></Link>
 					  <Link data-scroll className="btn btn-default btn-light-bg-two animated fadeInRightBig page-scroll" to="#">Purchase now</Link>
 					</div>
 				  </div>

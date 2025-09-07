@@ -144,7 +144,7 @@ return (
     <footer>
         <div className="text-center">
             <p className="copyright">
-                Monalisa &copy; 2025. All Rights Reserved by Nanosoft.
+                Monalisa &copy; 2025. All Rights Reserved by Nano_Theme.
             </p>
         </div>
     </footer>
