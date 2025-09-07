@@ -6,10 +6,9 @@ export default function Youtube() {
   const [bgImageLoaded, setBgImageLoaded] = useState(false);
 
   useEffect(() => {
-    // Show video after image has been displayed for a few seconds
     const timer = setTimeout(() => {
       setShowVideo(true);
-    }, 3000); // Show image for 3 seconds before fading
+    }, 3000); 
 
     return () => clearTimeout(timer);
   }, []);

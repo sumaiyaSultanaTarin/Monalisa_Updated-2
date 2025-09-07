@@ -427,7 +427,7 @@ fieldset {
   color:#fff;
   margin:0 0 16px;
   text-transform:uppercase;
-  font-size: clamp(24px, 4.2vw, 48px);
+  font-size: 40px;
   line-height: 1.15;
 }
 
@@ -636,6 +636,7 @@ video{ min-width:100%; }
   }
 }
 
+
 /*START YOUTUBE HOME DESIGN*/
 .youtube_bg {
 position: relative;
@@ -654,10 +655,17 @@ min-height:100vh;
 .home_text h2 {
     color: #f8f8f8;
     font-size: 40px;
-	 padding-top:250px;
+	  padding-top:250px;
     margin-top: 0;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px ) and (max-width: 991px) {
+  .home_text h2 {
+    margin-top: 200px;
+  }
+  
 }
 .home_text p {
     color: #fff;
@@ -673,6 +681,7 @@ min-height:100vh;
     height: 90vh;
   }
 }
+
 @media (max-width: 768px) {
   .youtube_bg {
     height: 100vh;

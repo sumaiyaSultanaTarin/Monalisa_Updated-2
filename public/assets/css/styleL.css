@@ -484,7 +484,7 @@ fieldset {
   color: #fff;
   margin: 0 0 16px;
   text-transform: uppercase;
-  font-size: clamp(24px, 4.2vw, 48px);
+  font-size: 40px;
   line-height: 1.15;
 }
 
@@ -786,6 +786,12 @@ video {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
+@media screen and (min-width: 768px ) and (max-width: 991px) {
+  .home_text h2 {
+    margin-top: 200px;
+  }
+}
 .home_text p {
   color: #fff;
   margin: auto auto 30px;
@@ -799,6 +805,7 @@ video {
     margin-right: 10px;
   }
 }
+
 
 .bg-image {
   position: absolute;
