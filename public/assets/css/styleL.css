@@ -172,21 +172,24 @@ fieldset {
 .topcontrol {
   background: #8bc34a none repeat scroll 0 0;
   border-radius: 5px;
-  bottom: 5px;
+  bottom: 10px;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
   color: #fff;
   cursor: pointer;
   font-size: 26px;
   height: 40px;
   line-height: 40px;
-  opacity: 1;
+  opacity: 1 !important;
   filter: opacity(1);
   position: fixed;
-  right: 5px;
+  right: 10px;
   text-align: center;
   -webkit-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
   width: 40px;
+    z-index: 99999;                
+  display: grid !important;     
+  place-items: center;
 }
 .topcontrol:hover {
   background: #222;
@@ -204,7 +207,7 @@ fieldset {
 }
 .section-title h2 {
   color: #333;
-  margin: 0;
+  margin: 15px;
   position: relative;
   text-transform: uppercase;
   padding-bottom: 10px;
@@ -2979,7 +2982,7 @@ figure.effect-apollo:hover p {
 }
 /* Glassy modal card */
 .swal2-glass-modal{
-  background: rgba(255,255,255, 0.82) !important;
+  background: rgba(255,255,255,0.82) !important;
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
   border-radius: 20px !important;

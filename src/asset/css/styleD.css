@@ -177,7 +177,7 @@ fieldset {
     font-size: 26px;
     height: 40px;
     line-height: 40px;
-    opacity: 1;
+    opacity: 1 !important;
     filter: opacity(1);
     position: fixed;
     right: 5px;
@@ -185,6 +185,9 @@ fieldset {
     -webkit-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
     width: 40px;
+    z-index: 99999;                
+    display: grid !important;     
+    place-items: center;
 }
 .topcontrol:hover {
     background: #222;
@@ -201,7 +204,7 @@ fieldset {
 
 .section-title h2 {
     color: #fff;
-    margin: 0;
+    margin: 15px;
     position: relative;
     text-transform: uppercase;
     padding-bottom: 10px;
