@@ -47,9 +47,9 @@ export default function Youtube() {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/hS0YY1f50_c?autoplay=1&mute=1&loop=1&playlist=hS0YY1f50_c&controls=0&showinfo=0&rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/hS0YY1f50_c?autoplay=1&mute=1&loop=1&playlist=hS0YY1f50_c&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
             frameBorder="0"
-            allow="autoplay; encrypted-media"
+            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
             allowFullScreen
             style={{
               transform: "scale(1.1)", 

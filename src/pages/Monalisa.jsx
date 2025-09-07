@@ -144,7 +144,7 @@ return (
     <footer>
         <div className="text-center">
             <p className="copyright">
-                Monalisa &copy; 2016. All Rights Reserved.
+                Monalisa &copy; 2025. All Rights Reserved by Nanosoft.
             </p>
         </div>
     </footer>
@@ -233,7 +233,7 @@ return (
                 border: 4px double #333;
                 color: #333;
                 font-size: 28px;
-                margin: auto auto 60px;
+                margin: auto auto 20px;
                 padding: 10px;
                 position: relative;
                 text-transform: uppercase;
@@ -244,7 +244,7 @@ return (
                 background: #000 none repeat scroll 0 0;
                 border: 4px double #333;
                 color: #fff;
-
+                margin : 40px auto 20px;
             }
 
             .demo {

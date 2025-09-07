@@ -1,16 +1,34 @@
 import Swal from "sweetalert2";
 
 export default function ContactForm() {
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const form = e.currentTarget;
 
-    // Success popup
-    Swal.fire({
-      title: "Success!",
-      text: "Your message has been sent successfully.",
+    const result = await Swal.fire({
+      position: "center",
+      title: "Message sent! 🚀",
+      html: "We’ll reply soon.",
       icon: "success",
+      // Enhanced UI
+      buttonsStyling: false,
+      showConfirmButton: true,
       confirmButtonText: "OK",
+      allowOutsideClick: false, 
+      customClass: {
+        popup: "swal2-glass-modal",
+        title: "swal2-modal-title",
+        htmlContainer: "swal2-modal-text",
+        confirmButton: "swal2-confirm-cta",
+      },
+      showClass: { popup: "swal2-zoom-in" },
+      hideClass: { popup: "swal2-zoom-out" },
     });
+
+    if (result.isConfirmed) {
+      form.reset(); 
+
+    }
   };
 
   return (

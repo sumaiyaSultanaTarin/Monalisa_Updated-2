@@ -14,7 +14,7 @@ export default function Navbar() {
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </button>
-					<Link to="#home" className="navbar-brand"><img src="assets/img/logo.png" alt="logo"/></Link>
+					<Link to="/" className="navbar-brand"><img src="assets/img/logo.png" alt="logo"/></Link>
                 </div>
                 <div className="navbar-collapse collapse">
 					<nav>
