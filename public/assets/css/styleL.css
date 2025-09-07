@@ -585,6 +585,15 @@ fieldset {
   margin-right: 10px;
 }
 
+@media only screen and (max-width: 421px) {
+  .caption a{ 
+    margin-bottom: 0px !important; 
+  }
+  .btn-light-bg {
+    margin-bottom: 10px !important;
+  }
+} 
+
 .btn-light-bg > span {
   position: relative;
   z-index: 1;
